@@ -1,0 +1,12 @@
+1,'1','Trenton To Belleville Intercity Express','DC143C',49,3
+2,'2','Trenton To Belleville Intercity','DC143C',50,3
+10000,'A','Route A Loop','F6CA1E',65,3
+20000,'B','Route B Loop','26A65B',66,3
+30000,'C','Route C Express','FF0000',67,3
+320001,'CT-1','County Transit - Route 1 -Picton-Belleville','DC143C',67040,3
+320002,'CT-2','County Transit - Route 2 - Wellington - Belleville','DC143C',67041,3
+320003,'CT-3','County Transit - Route 3 - Bloomfield - Picton','DC143C',67042,3
+3000001,'C1','Route C-Special Express','FF0000',2126,3
+10192000,'A-St','Route A Saturday Loop','F6CA1E',65154,3
+20192000,'B-St','Route B Saturday Loop','26A65B',66115,3
+3201214000,'CT-LN','County Transit-Late-Picton / Bloomfield / Wellington','DC143C',2079155,3
