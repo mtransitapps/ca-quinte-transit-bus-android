@@ -1,9 +1,65 @@
 {
     "default_route_id_enabled": true,
-    "use_route_short_name_for_route_id": true,
+    "use_route_short_name_for_route_id": false,
+    "route_id_cleanup_regex": "\\-",
+    "route_id_previous_char_configs": [
+        {
+            "char": "CT",
+            "id_part": 320000
+        }
+    ],
+    "route_short_name_to_route_id_configs": [
+        {
+            "route_short_name": "ASt",
+            "route_id": 10192000
+        },
+        {
+            "route_short_name": "BSt",
+            "route_id": 20192000
+        },
+        {
+            "route_short_name": "CTLN",
+            "route_id": 3201214000
+        }
+    ],
     "default_route_long_name_enabled": true,
     "direction_finder_enabled": true,
+    "allow_non_descriptive_head_signs_until": {
+        "3000001": "20260929",
+        "10192000": "20260929",
+        "20192000": "20260929"
+    },
     "trip_headsign_remove_via": true,
-    "trip_headsign_cleaners": [],
+    "trip_headsign_cleaners": [
+        {
+            "regex": "Terminalt",
+            "ignore_case": true,
+            "replacement": "Terminal",
+            "comment": "Fix misspelling of 'Terminalt' to 'Terminal'"
+        },
+        {
+            "regex": "W\\/O Loyalis(t)?$",
+            "ignore_case": true,
+            "comment": "Remove ends with 'W/O Loyalis[t]' from headsigns"
+        },
+        {
+            "regex": "Loop .*",
+            "ignore_case": true,
+            "replacement": "Loop",
+            "comment": "Remove Loop details from headsigns"
+        },
+        {
+            "regex": "^(([^\\-]+\\-)+)",
+            "ignore_case": true,
+            "comment": "Remove 'Aaa-Bbb-' from 'Aaa-Bbb-Ccc' headsigns"
+        }
+    ],
+    "use_stop_code_for_stop_id": true,
+    "stop_code_cleaners": [
+        {
+            "regex": "\\.$",
+            "comment": "Remove trailing '.' from stop code"
+        }
+    ],
     "stop_name_cleaners": []
 }
