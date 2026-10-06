@@ -25,10 +25,13 @@
     "default_route_long_name_enabled": true,
     "direction_finder_enabled": true,
     "allow_non_descriptive_head_signs_until": {
-        "3000001": "20260929",
-        "10192000": "20260929",
-        "20192000": "20260929"
+        "3000001": "20271006",
+        "10192000": "20271006",
+        "20192000": "20271006"
     },
+    "allow_non_descriptive_head_signs_3000001_comment": "Route C1 (Route C-Special Express): head-signs 'Loop' for both directions, same last stop... cannot handle.",
+    "allow_non_descriptive_head_signs_10192000_comment": "Route A-St (Route A Saturday Loop): head-signs 'Loop' for both directions, same last stop... cannot handle.",
+    "allow_non_descriptive_head_signs_20192000_comment": "Route B-St (Route B Saturday Loop): head-signs 'Loop' for both directions, same last stop... cannot handle.",
     "trip_headsign_remove_via": true,
     "trip_headsign_cleaners": [
         {
